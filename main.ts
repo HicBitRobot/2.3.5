@@ -21,7 +21,7 @@ namespace hicbit_control {
     */
     //% weight=100 blockGap=20 blockId=hicbit_Init block="Initialize hicbit"
     export function hicbit_Init() {
-
+        let buf = pins.createBuffer(1);
         led.enable(false);
 
         serial.redirect(
@@ -32,6 +32,9 @@ namespace hicbit_control {
         basic.forever(() => {
             getHandleCmd();
         });
+
+        buf[0] = 0x0F;
+        serial.writeBuffer(buf);
         serial.writeString(Display.NEW_LINE);
         basic.pause(500);
         Display.Clearscreen();
@@ -334,6 +337,7 @@ namespace hicbit {
     //% weight=88 blockId=hicbit_set_Dual_motor block="Set |port1 %port1| motor |speed1 %speed1| and |port2 %port2| motor |speed2 %speed2| |Features %Features|: |%content|"
     //% speed1.min=-255 speed1.max=255 
     //% speed2.min=-255 speed2.max=255 
+    //% port2.hicbit_Port = 0x02
     //% inlineInputMode=inline
     export function hicbit_set_Dual_motor(port1: hicbit_Port, speed1: number,port2: hicbit_Port, speed2: number, Features: hicbit_Features, content: number) {
         //启动变量
