@@ -162,7 +162,7 @@ namespace hicbit {
     /**
     *	Set interface motor speed , range of -255~255, that can control turn.etc.
     */
-    //% weight=100 blockId=hicbit_set_Single_motor block="Set |port %port| motor|speed %speed| |Features %Features|: |%content|"
+    //% weight=89 blockId=hicbit_set_Single_motor block="Set |port %port| motor|speed %speed| |Features %Features|: |%content|"
     //% speed.min=-255 speed.max=255 
     //% inlineInputMode=inline
     export function hicbit_set_Single_motor(port: hicbit_Port, speed: number, Features: hicbit_Features, content: number) {
@@ -331,7 +331,7 @@ namespace hicbit {
     /**
     *	Set interface motor1 and motor2 speed , range of -255~255, that can control turn.etc.
     */
-    //% weight=100 blockId=hicbit_set_Dual_motor block="Set |port1 %port1| motor |speed1 %speed1| and |port2 %port2| motor |speed2 %speed2| |Features %Features|: |%content|"
+    //% weight=88 blockId=hicbit_set_Dual_motor block="Set |port1 %port1| motor |speed1 %speed1| and |port2 %port2| motor |speed2 %speed2| |Features %Features|: |%content|"
     //% speed1.min=-255 speed1.max=255 
     //% speed2.min=-255 speed2.max=255 
     //% inlineInputMode=inline
