@@ -6,15 +6,6 @@
 
 	"hicbit.hicbit_set_Single_motor": "设置一路电机速度(-255~255)和电机功能",
 	"hicbit.hicbit_set_Dual_motor": "设置两路电机速度(-255~255)和电机功能",
-	"hicbit.hicbit_setMotorSpeed0":"设置电机速度，速度范围-255到255，控制电机正反转",
-	"hicbit.hicbit_StopMotor":"电机停止",
-	"hicbit.hicbit_setMotorSpeed":"设置电机速度和时间，速度范围-255到255，控制电机正反转",
-	"hicbit.hicbit_setMotorSpeed11":"设置第一组电机速度，速度范围-255到255，控制电机正反转",
-	"hicbit.hicbit_setMotorstop1":"第一组电机停止",
-	"hicbit.hicbit_setMotorSpeed1":"设置第一组电机速度和时间，速度范围-255到255，控制电机正反转",
-	"hicbit.hicbit_setMotorSpeed22":"设置第二组电机速度，速度范围-255到255，控制电机正反转",
-	"hicbit.hicbit_setMotorstop2":"第二组电机停止",
-	"hicbit.hicbit_setMotorSpeed2":"设置第二组电机速度和时间，速度范围-255到255，控制电机正反转",
 	"hicbit.hicbit_setCodedmotor":"设置编码电机的角度和速度",
 
 	"Sensor.Buzzer":"蜂鸣器控制",
