@@ -24,6 +24,8 @@
   "Sensor.hicbit_ultrasonic": "Get the distance of ultrasonic detection to the obstacle 超声波",
   "hicbit.hicbit_setCodedmotor": "Set Coded motor , angle of -360~360, that can control turn.",
   "hicbit.hicbit_set_Dual_motor": "Set interface motor1 and motor2 speed , range of -255~255, that can control turn.etc.",
+  "hicbit.hicbit_set_Dual_motor|param|port1": "First port, eg: hicbit.hicbit_Port.port1",
+  "hicbit.hicbit_set_Dual_motor|param|port2": "The second port, eg: hicbit.hicbit_Port.port2",
   "hicbit.hicbit_set_Single_motor": "Set interface motor speed , range of -255~255, that can control turn.etc.",
   "hicbitRGBColors": "hicbitRGBLight package",
   "hicbitRGBLight": "QbitRGBLight Functions",
