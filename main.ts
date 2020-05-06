@@ -165,7 +165,7 @@ namespace hicbit {
     /**
     *	Set interface motor speed , range of -255~255, that can control turn.etc.
     */
-    //% weight=89 blockId=hicbit_set_Single_motor block="Set |port %port| motor|speed %speed| |Features %Features|: |%content|"
+    //% weight=99 blockId=hicbit_set_Single_motor block="Set |port %port| motor|speed %speed| |Features %Features|: |%content|"
     //% speed.min=-255 speed.max=255 
     //% inlineInputMode=inline
     export function hicbit_set_Single_motor(port: hicbit_Port, speed: number, Features: hicbit_Features, content: number) {
@@ -334,12 +334,11 @@ namespace hicbit {
     /**
     *	Set interface motor1 and motor2 speed , range of -255~255, that can control turn.etc.
     */
-    //% weight=88 blockId=hicbit_set_Dual_motor block="Set |port %port1| motor |speed %speed1| and |port %port2| motor |speed %speed2| |Features %Features|: |%content|"
+    //% weight=98 blockId=hicbit_set_Dual_motor block="Set |port %port1| motor |speed %speed1| and |port %port2| motor |speed %speed2| |Features %Features|: |%content|"
     //% speed1.min=-255 speed1.max=255 
     //% speed2.min=-255 speed2.max=255 
-    //% port2.hicbit_Port = hicbit.hicbit_Port.port2
     //% inlineInputMode=inline
-    export function hicbit_set_Dual_motor(port1: hicbit_Port, speed1: number,port2: hicbit_Port, speed2: number, Features: hicbit_Features, content: number) {
+    export function hicbit_set_Dual_motor(port1: hicbit_Port, speed1: number,port2: hicbit_Port.port2, speed2: number, Features: hicbit_Features, content: number) {
         //启动变量
         let Turn: number = 0;
         let buf = pins.createBuffer(6);
@@ -518,7 +517,7 @@ namespace hicbit {
     /**
     *	Set Coded motor , angle of -360~360, that can control turn.
     */
-    //% weight=90 blockGap=50 blockId=hicbit_setCodedmotor block="Set |port %port| motor|angle %angle|and |speed %speed|"
+    //% weight=97 blockId=hicbit_setCodedmotor block="Set |port %port| motor|angle %angle|and |speed %speed|"
     //% angle.min=-360 angle.max=360
     export function hicbit_setCodedmotor(port: hicbit_Coded_motor_Port,angle: number,speed:Coded_motor_speed) {
         let angle_H: number = 0;    //角度高8位
